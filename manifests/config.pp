@@ -7,9 +7,9 @@ class grmlzsh::config {
       group  => 'root',
       mode   => '0644';
     '/etc/zsh/zshrc':
-      source => 'puppet:///modules/zsh/grml-zshrc';
+      source => 'puppet:///modules/grmlzsh/grml-zshrc';
     '/etc/skel/.zshrc':
-      source => 'puppet:///modules/zsh/grml-zshrc-local';
+      source => 'puppet:///modules/grmlzsh/grml-zshrc-local';
   }
 
 }

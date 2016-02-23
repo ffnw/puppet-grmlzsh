@@ -1,10 +1,7 @@
 class grmlzsh {
 
-  contain grmlzsh::install
-  contain grmlzsh::config
-
-  class { 'grmlzsh::install': }
-  class { 'grmlzsh::config': }
+  require grmlzsh::install
+  require grmlzsh::config
 
 }
 

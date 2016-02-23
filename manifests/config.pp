@@ -5,11 +5,11 @@ class grmlzsh::config {
       ensure => file,
       user   => 'root',
       group  => 'root',
-      mode   => '0644',
+      mode   => '0644';
     '/etc/zsh/zshrc':
-      source => 'puppet:///modules/zsh/grml-zshrc',
+      source => 'puppet:///modules/zsh/grml-zshrc';
     '/etc/skel/.zshrc':
-      source => 'puppet:///modules/zsh/grml-zshrc-local',
+      source => 'puppet:///modules/zsh/grml-zshrc-local';
   }
 
 }

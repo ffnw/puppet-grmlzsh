@@ -3,7 +3,7 @@ class grmlzsh::config {
   file {
     default:
       ensure => file,
-      user   => 'root',
+      owner  => 'root',
       group  => 'root',
       mode   => '0644';
     '/etc/zsh/zshrc':
